@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>~~*Server Events*~~</title>
+
+    <meta name="description" content="Upcoming events in our Discord server community." />
+    <meta property="og:title" content="Discord Server Events" />
+    <meta property="og:description" content="Check out our upcoming events and activities." />
+    <meta name="theme-color" content="#FF00FF" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Y2K/MySpace Style Overrides */
+        body {
+            font-family: 'Comic Neue', cursive;
+            background: #000000 url('https://i.gifer.com/76YS.gif');
+            color: #FF00FF;
+            cursor: url('https://cur.cursors-4u.net/cursors/cur-7/cur686.cur'), auto;
+        }
+        
+        .hero {
+            background: linear-gradient(to right, #FF00FF, #00FFFF);
+            border: 5px ridge #FFFF00;
+            text-shadow: 2px 2px #000000;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'VT323', monospace;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .events-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 5px ridge #00FFFF;
+        }
+        
+        .event-card {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(0, 255, 255, 0.1);
+            border: 3px dashed #FF00FF;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .event-card::before {
+            content: "NEW!";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #FFFF00;
+            color: #000000;
+            padding: 5px 10px;
+            font-weight: bold;
+            animation: blink 1s infinite;
+            transform: rotate(15deg);
+        }
+        
+        .event-date {
+            color: #FFFF00;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        /* Navigation styles */
+        .nav-bar {
+            background: linear-gradient(to right, #00FFFF, #FF00FF);
+            padding: 10px;
+            text-align: center;
+            border-bottom: 5px ridge #FFFF00;
+        }
+        
+        .nav-bar a {
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            background: #FFFFFF;
+            border: 3px outset #00FFFF;
+            font-family: 'VT323', monospace;
+            text-transform: uppercase;
+        }
+        
+        .nav-bar a:hover {
+            background: #FFFF00;
+            transform: scale(1.1);
+        }
+        
+        .blink {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .featured-event {
+            border: 5px ridge #FFFF00 !important;
+            background: rgba(255, 0, 255, 0.2) !important;
+        }
+        
+        .featured-event::before {
+            content: "FEATURED!";
+            background: #FF00FF;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="rules.html">Rules</a>
+        <a href="events.html" class="blink">Events</a>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>-=[ Upcoming Events ]=-</h1>
+            <p><marquee scrollamount="3" width="60%">Join us for these awesome community activities!</marquee></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="events-container">
+            <div class="event-card featured-event">
+                <h3>~*~ Art Contest: Server Icon Challenge ~*~</h3>
+                <p class="event-date">Ends May 2nd, 2025 @ 15:00</p>
+                <p>🎂 Create a new server icon related to cake! The design with the most ⭐ reactions wins the @Icon Artist 2025 April role!</p>
+                <p>Requirements:</p>
+                <ul>
+                    <li>Must be related to cake 🎂</li>
+                    <li>You must have fun creating it!</li>
+                </ul>
+                <p>How to win: Get the most ⭐ reactions on your submission by May 2nd, 2025.</p>
+                <p>Good luck everyone! - Mikey</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
